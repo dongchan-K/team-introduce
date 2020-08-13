@@ -1,3 +1,4 @@
+
 .a11y-hidden{
   position: absolute;
   width: 1px;
@@ -12,3 +13,12 @@
   font-size: 30px;
   color: #204ecf;
 }
+
+.footer{
+	background-color: #00cc83;
+	color: #fff;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
