@@ -1,3 +1,19 @@
+
+.a11y-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+.gitignore_title{
+  font-size: 30px;
+  color: #204ecf;
+}
+
 .footer{
 	background-color: #00cc83;
 	color: #fff;
@@ -5,3 +21,4 @@
 	flex-flow: row nowrap;
 	justify-content: space-around;
 }
+
