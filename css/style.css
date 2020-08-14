@@ -73,10 +73,9 @@ section{
   text-align: center;
 }
 .gitignore_title {
-  font-size: 30px;
   color: #204ecf;
-  margin-top: 80px;
-  font-family: 'Playfair Display', serif;
+  margin-top: 150px;
+  font-family: 'Roboto Slab', serif;
 }
 .gitignore_title::before{
   content: "";
@@ -85,44 +84,55 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
   width: 15px;
-  height: 15px;
+  height: 17px;
   margin: 0 10px;
 }
 .gitignore_title span:first-child{
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 5px;
-  font-size: 40px;
+  font-size: 50px;
 }
 .gitignore_title span:last-child{
-  font-size: 40px;
+  font-size: 45px;
   letter-spacing: 5px;
+  font-weight: 300;
 }
 .sub_title{
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 200;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
   font-size: 15px;
+  margin-top: 10px;
 }
 .searchForm{
   margin-top: 30px;
-  width: 100%;
   font-size: 0;
+  width: 100%;
+  display:flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 .searchInput{
-  width: calc(100% - 20%);
-  padding: 10px 0;
+  width: 470px;
+  padding: 16px 0;
   margin: 0;
   border: 1px solid #ccc;
-  text-indent: 10px;
+  text-indent: 10px;  
 }
-
+.searchInput::-webkit-input-placeholder{
+  color: #ccc;
+  font-size: 13px;
+}
 .buttonSearch{
   margin: 0;
-  width: 110px;
-  padding: 7px 0;
+  flex-grow: 1;
+  padding: 15px 0;
   background-color: #00cc83;
-  border: 1px solid #aaa;
+  border: 0px;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
+}
+.buttonSearch:hover, .buttonSearch:focus{
+  background-color: #2aad7f;
 }
 .gitignore_link{
   display: flex;
@@ -131,16 +141,19 @@ section{
   margin-top: 20px;
 }
 .gitignore_link li a{
-  padding: 5px 0;
+  padding: 8px 0;
   text-decoration: none;
+  color: #204ecf;
 }
 .gitignore_link li:first-child::after{
   content: "|";
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
+  color: #204ecf;
+  font-size: 14px;
 }
 .gitignore_link li a:hover, .gitignore_link li a:focus{
-  border-bottom: 3px solid #204ecf;
+  border-bottom: 1px solid #204ecf;
 }
 
 
