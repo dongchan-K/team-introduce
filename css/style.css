@@ -1,4 +1,6 @@
-
+body{
+  width: 100%;
+}
 /* 숨김 컨텐츠 */
 .a11y-hidden {
   position: absolute;
@@ -58,12 +60,88 @@ padding-right: 100px;
 
 
 /* 메인 */
-
+section{
+  width: 100%;
+  min-height: 1100px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.container{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
 .gitignore_title {
   font-size: 30px;
   color: #204ecf;
+  margin-top: 80px;
+  font-family: 'Playfair Display', serif;
+}
+.gitignore_title::before{
+  content: "";
+  display: inline-block;
+  background-image: url(../assets/thumlogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+}
+.gitignore_title span:first-child{
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.gitignore_title span:last-child{
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+.sub_title{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+.searchForm{
+  margin-top: 30px;
+  width: 100%;
+  font-size: 0;
+}
+.searchInput{
+  width: calc(100% - 20%);
+  padding: 10px 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  text-indent: 10px;
 }
 
+.buttonSearch{
+  margin: 0;
+  width: 110px;
+  padding: 7px 0;
+  background-color: #00cc83;
+  border: 1px solid #aaa;
+  color: #fff;
+  font-size: 16px;
+}
+.gitignore_link{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.gitignore_link li a{
+  padding: 5px 0;
+  text-decoration: none;
+}
+.gitignore_link li:first-child::after{
+  content: "|";
+  display: inline-block;
+  margin: 0 10px;
+}
+.gitignore_link li a:hover, .gitignore_link li a:focus{
+  border-bottom: 3px solid #204ecf;
+}
 
 
 /* 푸터 */
